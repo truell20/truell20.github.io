@@ -3,9 +3,22 @@ body {
 }
 
 a:link {
-	color: #2a6496;
+	color: #0645AD;
 }
 
 a:visited {
-	color: #2a6496;
+	color: #0645AD;
+}
+
+p, ul {
+	color: #444;
+	font-family: "Helvetica Neue";
+}
+
+hr {
+	color: #444;
+	border: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-top: 1px solid #eee;
 }
