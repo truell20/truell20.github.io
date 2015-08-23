@@ -1,5 +1,5 @@
 body {
-	font-family: Helvetica;
+	font-family: "Helvetica Neue";
 }
 
 a:link {
@@ -12,7 +12,6 @@ a:visited {
 
 p, ul {
 	color: #444;
-	font-family: "Helvetica Neue";
 }
 
 hr {
