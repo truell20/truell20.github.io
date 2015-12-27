@@ -9,14 +9,15 @@
 	<meta name="author" content="Michael Truell">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="normalize.css" />
 	<link rel="stylesheet" href="skeleton.css" />
 	<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+	<div id="wrapper">
 	<div class="container">
-
 		<div class="row" id="navbar">
 			<ul>
 				<li><a data-scroll href="#projects">Projects</a></li>
@@ -73,9 +74,15 @@
 					</div>
 					<label for="exampleMessage">Message</label>
 					<textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage" name="message"></textarea>
-					<input class="button-primary" name="submit" value="Submit" type="submit">
+					<input class="button-primary" name="submit" id="submit" value="Submit" type="submit">
 				</form>
 			</div>
+		</div>
+		</div>
+
+		<div id="footer">
+			<a class="leftLink" href="mailto:michael_truell@horacemann.org"><i class="fa fa-envelope"></i></a>
+			<a class="rightLink" href="https://github.com/truell20"><i class="fa fa-github"></i></a>
 		</div>
 
 		<script src="smooth-scroll.min.js"></script>
