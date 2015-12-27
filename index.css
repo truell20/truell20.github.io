@@ -1,23 +1,34 @@
-body {
-	font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+/* GENERAL PAGE RULES */
+
+.container {
+	margin-top: 50px;
 }
 
-a:link {
-	color: #0645AD;
+a {
+	color:#660000;
 }
 
-a:visited {
-	color: #0645AD;
+a:hover {
+	color:#400000;
 }
 
-p, ul {
-	color: #333;
+/* NAVBAR */
+
+#navbar {
+	margin: 10px 0 0 0;
+	text-align:right;
 }
 
-hr {
-	color: #333;
-	border: 0;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border-top: 1px solid #eee;
+#navbar ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+	margin-bottom: 130px;
+}
+
+#navbar a {
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	text-decoration: underline;
 }
