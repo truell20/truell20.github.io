@@ -21,14 +21,13 @@
 			<ul>
 				<li><a data-scroll href="#projects">Projects</a></li>
 				<li><a data-scroll href="#clubs">Clubs</a></li>
-				<li><a data-scroll href="#contact">Contact Me</a></li>
 				<li><a href="Resume.pdf">Resume</a></li>
 			</ul>
 		</div>
 
 		<h1>Michael Truell</h1>
 		<hr>
-		<p>Hello. I am a high school student at the Horace Mann School in New York. I have programmed for 5+ years in C++, Java, Android, Python, Javascript, and the LAMP stack. I also have much experience with machine learning (see <a href="https://github.com/truell20/Fido-Public">Fido</a>).</p>
+		<p>Hello. I am a high school student at the Horace Mann School in New York. I have programmed for 5+ years in C++, Java, Android, Python, Javascript, and the LAMP stack. I also have much experience with machine learning (see <a href="https://github.com/truell20/Fido-Public">Fido</a>). You may find me here: <a href="https://github.com/truell20">Github</a> <a href="mailto:michael_truell@horacemann.org">Email</a></p>
 		
 		<div id="projects"><h2>Projects</h2>
 			<ul>
@@ -58,61 +57,11 @@
 
 				<li><a href="https://github.com/frc5806">Horace Mann School Varsity Robotics Team</a> - I am the Head of Software for the Horace Mann Varsity Robotics Team (aka. the Basement Lions). We compete in the First Robotics Competition.</li>
 			</ul></div>
-
-			<div id="contact"><h2>Contact Me</h2>
-				<form>
-					<div class="row">
-						<div class="six columns">
-							<label for="nameInput">Name</label>
-							<input class="u-full-width" placeholder="John Doe" id="nameInput" name="name" type="text">
-						</div>
-						<div class="six columns">
-							<label for="emailInput">Email</label>
-							<input class="u-full-width" placeholder="john_doe@gmail.com" id="emailInput" name="email" type="email">
-						</div>
-					</div>
-					<label for="exampleMessage">Message</label>
-					<textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage" name="message"></textarea>
-					<input class="button-primary" name="submit" value="Submit" type="submit">
-				</form>
-			</div>
 		</div>
 
 		<script src="smooth-scroll.min.js"></script>
 		<script>
 			smoothScroll.init();
-
-			var contactSection = document.getElementById("contact"); 
-			var contactForm = contactSection.querySelector('form'),
-			inputName = contactForm.querySelector('[name="name"]'),
-			inputEmail = contactForm.querySelector('[name="email"]'),
-			textAreaMessage = contactForm.querySelector('[name="message"]'),
-			sendButton = contactForm.querySelector('[name="submit"]');
-
-			sendButton.addEventListener('click', function(event){
-				event.preventDefault();
-
-				sendButton.value = 'sending..';
-
-				var xhr = new XMLHttpRequest();
-				xhr.open('POST', '//formspree.io/contact@truell20.github.io', true);
-				xhr.setRequestHeader("Accept", "application/json")
-				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded")
-
-				xhr.send(
-					"name=" + inputName.value +
-					"&email=" + inputEmail.value +
-					"&message=" + textAreaMessage.value);
-
-				xhr.onloadend = function (res) {
-					if (res.target.status === 200){
-						sendButton.value = 'Message sent!';
-					}
-					else {
-						sendButton.value = 'Error!';
-					}
-				}
-			});
 		</script>
 	</body>
 </html>
