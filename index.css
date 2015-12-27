@@ -1,23 +1,26 @@
-body {
-	font-family: "Helvetica Neue", Helvetica, "Arial", sans-serif;
+/* GENERAL PAGE RULES */
+
+.container {
+	margin-top: 50px;
 }
 
-a:link {
-	color: #0645AD;
+/* NAVBAR */
+
+#navbar {
+	margin: 10px 0 0 0;
+	text-align:right;
 }
 
-a:visited {
-	color: #0645AD;
+#navbar ul li {
+	display: inline;
+	margin: 0 20px 0 0;
+	margin-bottom: 130px;
 }
 
-p, ul {
-	color: #333;
+#navbar a {
+	text-decoration: none;
 }
 
-hr {
-	color: #333;
-	border: 0;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	border-top: 1px solid #eee;
+#navbar a:hover {
+	text-decoration: underline;
 }
