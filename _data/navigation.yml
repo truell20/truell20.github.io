@@ -1,0 +1,14 @@
+- title: about
+  url: /me
+
+- title: projects
+  url: /projects
+
+- title: github
+  url: https://github.com/truell20
+
+- title: email
+  url: mailto:michael_truell@horacemann.org
+
+- title: resume
+  url: /assets/pdf/Resume.pdf
